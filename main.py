@@ -244,7 +244,7 @@ st.info("Welcome to Sniper Chatbot")
 
 # Display chat history
 for message in st.session_state.chat_history:
-    with st.chat_message(message["role"], avatar='🤖' if message["role"] == "assistant" else "👨🏼‍💻"):
+    with st.chat_message(message["role"], avatar='https://raw.githubusercontent.com/sahirmaharaj/exifa/main/img/assistant.gif' if message["role"] == "assistant" else "👨🏼‍💻"):
         st.markdown(message["content"])
 
 # ---------------------- User Info Form ----------------------
